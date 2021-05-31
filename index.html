@@ -193,6 +193,50 @@ function mphone(v) {
 			}
 		</script>
 
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+	* {
+   		margin: 0;
+    	border: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+	  }
+
+			h1{
+               text-align: center;
+               font-family: Verdana;
+
+			}
+
+			body{
+				position: relative;
+    			margin-bottom: 1.5rem;
+    			background: linear-gradient(45deg, #ADD8E6, #B0C4DE);
+    			background-repeat: no-repeat;
+			}
+
+			button{
+    			margin-top: 2rem;
+   			    padding: 0.4rem;
+    			width: 50%;
+   			    background: linear-gradient(to left, #000080, #4169E1);
+    			cursor: pointer;
+    			color: white;
+    			font-size: 0.9rem;
+    			font-weight: 300;
+    			border-radius: 4px;
+    			transition: all 0.3s ease;
+			  }
+
+	     button:hover {
+    		letter-spacing: 0.5px;
+    		background: linear-gradient(to right, #000080, #4169E1);
+		}
+
+		</style>
+
 
         
 
@@ -203,7 +247,7 @@ function mphone(v) {
 </head>
 <body>
       <h1>Cadastre-se</h1 class="form-control">
-
+      </br>
 
       <form action="" id="formulario" method="POST" name="formulario">
       <div class="container">
@@ -233,7 +277,7 @@ function mphone(v) {
       		<input id="tel" type="text" name="tel" class="form-control"  onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" placeholder="(00) 00000-0000" >
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-5">
         	<label>CPF:</label>
         	<input id="cpf" type="text" name="cpf" class="form-control" onkeydown="javascript: fMasc( this, mCPF );" maxlength="14" placeholder="000.000.000-00">
         </div>
